@@ -7,21 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2337DEFD2253D5C400598DFB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2337DEFC2253D5C400598DFB /* GoogleService-Info.plist */; };
 		23AD3F5A2253D4BB00607DB6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AD3F592253D4BB00607DB6 /* AppDelegate.swift */; };
-		23AD3F5C2253D4BB00607DB6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AD3F5B2253D4BB00607DB6 /* ViewController.swift */; };
+		23AD3F5C2253D4BB00607DB6 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AD3F5B2253D4BB00607DB6 /* SignInVC.swift */; };
 		23AD3F5F2253D4BB00607DB6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23AD3F5D2253D4BB00607DB6 /* Main.storyboard */; };
 		23AD3F612253D4BC00607DB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23AD3F602253D4BC00607DB6 /* Assets.xcassets */; };
 		23AD3F642253D4BC00607DB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23AD3F622253D4BC00607DB6 /* LaunchScreen.storyboard */; };
+		4B2D64EB6BF0ED47F3EF69FD /* Pods_mock_social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2A00CD41E1B8FEF17841685 /* Pods_mock_social.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2337DEFC2253D5C400598DFB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		23AD3F562253D4BB00607DB6 /* mock-social.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mock-social.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		23AD3F592253D4BB00607DB6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		23AD3F5B2253D4BB00607DB6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		23AD3F5B2253D4BB00607DB6 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		23AD3F5E2253D4BB00607DB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		23AD3F602253D4BC00607DB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		23AD3F632253D4BC00607DB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		23AD3F652253D4BC00607DB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		31598CE3ECBCBE25E0C7FD8B /* Pods-mock-social.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mock-social.release.xcconfig"; path = "Target Support Files/Pods-mock-social/Pods-mock-social.release.xcconfig"; sourceTree = "<group>"; };
+		D2A00CD41E1B8FEF17841685 /* Pods_mock_social.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mock_social.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5F782C74E187CCF32C033E5 /* Pods-mock-social.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mock-social.debug.xcconfig"; path = "Target Support Files/Pods-mock-social/Pods-mock-social.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,50 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B2D64EB6BF0ED47F3EF69FD /* Pods_mock_social.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00E9104EDDA561388163E54C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D2A00CD41E1B8FEF17841685 /* Pods_mock_social.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		235EA0DF2253D7350092A1E7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		235EA0E02253D73B0092A1E7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		235EA0E12253D73F0092A1E7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				23AD3F5B2253D4BB00607DB6 /* SignInVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		23AD3F4D2253D4BB00607DB6 = {
 			isa = PBXGroup;
 			children = (
 				23AD3F582253D4BB00607DB6 /* mock-social */,
 				23AD3F572253D4BB00607DB6 /* Products */,
+				8E3C1FDA50156701C7D14232 /* Pods */,
+				00E9104EDDA561388163E54C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +93,26 @@
 		23AD3F582253D4BB00607DB6 /* mock-social */ = {
 			isa = PBXGroup;
 			children = (
+				235EA0E12253D73F0092A1E7 /* Controller */,
+				235EA0E02253D73B0092A1E7 /* View */,
+				235EA0DF2253D7350092A1E7 /* Model */,
 				23AD3F592253D4BB00607DB6 /* AppDelegate.swift */,
-				23AD3F5B2253D4BB00607DB6 /* ViewController.swift */,
 				23AD3F5D2253D4BB00607DB6 /* Main.storyboard */,
 				23AD3F602253D4BC00607DB6 /* Assets.xcassets */,
 				23AD3F622253D4BC00607DB6 /* LaunchScreen.storyboard */,
 				23AD3F652253D4BC00607DB6 /* Info.plist */,
+				2337DEFC2253D5C400598DFB /* GoogleService-Info.plist */,
 			);
 			path = "mock-social";
+			sourceTree = "<group>";
+		};
+		8E3C1FDA50156701C7D14232 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F5F782C74E187CCF32C033E5 /* Pods-mock-social.debug.xcconfig */,
+				31598CE3ECBCBE25E0C7FD8B /* Pods-mock-social.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +122,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 23AD3F682253D4BC00607DB6 /* Build configuration list for PBXNativeTarget "mock-social" */;
 			buildPhases = (
+				7003FCCF1AF5BA32657565CC /* [CP] Check Pods Manifest.lock */,
 				23AD3F522253D4BB00607DB6 /* Sources */,
 				23AD3F532253D4BB00607DB6 /* Frameworks */,
 				23AD3F542253D4BB00607DB6 /* Resources */,
+				EBD533636934C433E41394A4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,17 +178,71 @@
 				23AD3F642253D4BC00607DB6 /* LaunchScreen.storyboard in Resources */,
 				23AD3F612253D4BC00607DB6 /* Assets.xcassets in Resources */,
 				23AD3F5F2253D4BB00607DB6 /* Main.storyboard in Resources */,
+				2337DEFD2253D5C400598DFB /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7003FCCF1AF5BA32657565CC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-mock-social-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EBD533636934C433E41394A4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-mock-social/Pods-mock-social-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-mock-social/Pods-mock-social-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		23AD3F522253D4BB00607DB6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23AD3F5C2253D4BB00607DB6 /* ViewController.swift in Sources */,
+				23AD3F5C2253D4BB00607DB6 /* SignInVC.swift in Sources */,
 				23AD3F5A2253D4BB00607DB6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,6 +387,7 @@
 		};
 		23AD3F692253D4BC00607DB6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5F782C74E187CCF32C033E5 /* Pods-mock-social.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +406,7 @@
 		};
 		23AD3F6A2253D4BC00607DB6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31598CE3ECBCBE25E0C7FD8B /* Pods-mock-social.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
